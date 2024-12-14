@@ -1,0 +1,143 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fdf7f9;
+    overflow-x: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e07a9e;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #e07a9e;
+  }
+  
+  /* About Section */
+  #about-us {
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .about-text {
+    width: 50%;
+  }
+  
+  .about-text h1 {
+    font-size: 2.5em;
+    color: #e07a9e;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .about-image {
+    width: 50%;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px 10%;
+  background: #fff;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack the text and powered by section */
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+footer.fixed {
+  position: fixed;
+  bottom: 0;
+}
+
+/* Footer Text */
+footer p {
+  margin: 0;
+  color: #555;
+  text-align: center;
+  width: 100%; /* Ensures the text is centered properly */
+}
+
+/* RGB Color Changing for Nebula X */
+@keyframes rgb-color-change {
+  0% { color: rgb(255, 0, 0); }
+  20% { color: rgb(0, 255, 0); }
+  40% { color: rgb(0, 0, 255); }
+  60% { color: rgb(255, 255, 0); }
+  80% { color: rgb(255, 0, 255); }
+  100% { color: rgb(0, 255, 255); }
+}
+
+/* Nebula X Link Styling */
+footer .nebulaX {
+  font-weight: bold;
+  text-decoration: none;
+  animation: rgb-color-change 5s infinite; /* Add color-changing animation */
+  margin-top: 5px; /* Slight margin to separate from other text */
+}
+
+footer .nebulaX:hover {
+  color: #e07a9e;
+}
+
+/* Add the logo to the right side */
+footer .logo-container {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+footer .logo-container img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+}
